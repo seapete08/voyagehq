@@ -2,6 +2,16 @@ section(class="canvas section-3" id="section-3")
 
     h2 Sign Up
 
+<div class="container">
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 <form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" /></label>
@@ -11,8 +21,8 @@ section(class="canvas section-3" id="section-3")
   </p>
   <p>
     <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
+      <option value="Deck">Leader</option>
+      <option value="Engine">Follower</option>
     </select></label>
   </p>
   <p>
@@ -22,5 +32,6 @@ section(class="canvas section-3" id="section-3")
     <button type="submit">Send</button>
   </p>
 </form>
+</div>
 
     +nav-1({ target: "front", direction: "prev" })
